@@ -39,8 +39,8 @@ const generateCard = (data) =>{
     const pokeName = data.name[0].toUpperCase() + data.name.slice(1);
     console.log(data.stats);
     const statAttack = data.stats[1].base_stat;
-    const statDefense = data.stats[1].base_stat;
-    const statSpeed = data.stats[1].base_stat;
+    const statDefense = data.stats[2].base_stat;
+    const statSpeed = data.stats[3].base_stat;
 
     const themeColor = typeColor[data.types[0].type.name];
     console.log(themeColor);
